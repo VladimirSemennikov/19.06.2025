@@ -97,10 +97,7 @@ class Alfa():
         return x + y
 class Beta(Alfa):
     def result(self, x, y, z):
-        self.x = x
-        self.y = y
-        self.z = z
-        summa = self.sum_numbers(x, y)
+        summa = super().sum_numbers(x, y)
         print(summa / z)
 test = Beta()
 test.result(10,20,30)
